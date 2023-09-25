@@ -1,6 +1,10 @@
-from machine import Pin, I2C
+'''
+Biblioteca para lectura de sensor PMSA003I
+requiere definición previa del puerto I2C
+
+'''
+
 from ustruct import unpack
-from time import sleep_ms
 
 def PMSA_read(i2c):
     data_len = 0x20
